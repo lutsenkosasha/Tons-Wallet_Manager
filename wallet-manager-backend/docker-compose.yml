@@ -1,0 +1,23 @@
+version: '3.9'
+
+services:
+  web2:
+    container_name: web2
+    build:
+      dockerfile: docker/Dockerfile
+      context: .
+    ports:
+      - "8000:8000"
+    command: scripts/web/startup.sh -m -l
+    restart: on-failure
+    env_file:
+      - ./conf/.env
+    volumes:
+      - .:/code
+#    networks:
+#      - main_network
+#
+#networks:
+#  main_network:
+#    external: True
+##    driver: bridge
