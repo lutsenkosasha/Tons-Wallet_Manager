@@ -1,0 +1,96 @@
+.tableContainer {
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+.thead {
+    background-color: rgba(0, 0, 0, 0.51);
+}
+
+.th, .td {
+    border: 1px solid rgb(110, 110, 110);
+    padding: 8px;
+    text-align: center;
+}
+
+.td a {
+    color: rgb(255, 255, 255);
+}
+
+.td a:hover {
+    color: #6b6b6b;
+}
+
+.tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.51);
+}
+
+.loading {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.error {
+    color: red;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sortButton,
+.filterButton {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.sortButton:hover,
+.filterButton:hover {
+    background-color: #4e4e4e;
+    color: white;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.paginationButton {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #4e4e4e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.paginationButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    color: black;
+}
+
+.filterContainer {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.filterInput {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 1em;
+}
